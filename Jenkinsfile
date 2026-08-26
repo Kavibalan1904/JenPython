@@ -6,9 +6,9 @@ pipeline{
                 sh 'python3 --version'
             }
         }
-        stage('install python dependencies'){
+        stage('python status'){
             steps{
-                sh ''
+                sh 'python3 -m pip --version'
             }
         }
         stage('run tests'){

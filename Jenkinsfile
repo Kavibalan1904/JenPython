@@ -16,8 +16,6 @@ pipeline{
                 sh 'python3 --version'
             }
         }
-
-        }
         stage('run tests'){
             steps{
                 sh 'python3 app.py'
